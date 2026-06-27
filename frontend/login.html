@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - AlphaMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">AlphaMarket</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html" class="active" id="auth-link">Login</a>
+        </nav>
+    </header>
+
+    <div class="container" style="max-width: 400px; margin-top: 4rem;">
+        <div class="product-card" id="login-box" style="padding: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Sign In</h2>
+            <form id="login-form">
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.3rem; font-weight: 600;">Email Address</label>
+                    <input type="email" id="login-email" required style="width: 100%; padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.3rem; font-weight: 600;">Password</label>
+                    <input type="password" id="login-password" required style="width: 100%; padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 4px;">
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Login</button>
+            </form>
+            <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">
+                New here? <a href="#" id="show-register" style="color: #3182ce; text-decoration: none; font-weight: 600;">Create an account</a>
+            </p>
+        </div>
+
+        <div class="product-card" id="register-box" style="padding: 2rem; display: none;">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Create Account</h2>
+            <form id="register-form">
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.3rem; font-weight: 600;">Username</label>
+                    <input type="text" id="register-username" required style="width: 100%; padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label style="display: block; margin-bottom: 0.3rem; font-weight: 600;">Email Address</label>
+                    <input type="email" id="register-email" required style="width: 100%; padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.3rem; font-weight: 600;">Password (Min 6 characters)</label>
+                    <input type="password" id="register-password" minlength="6" required style="width: 100%; padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 4px;">
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Register</button>
+            </form>
+            <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">
+                Already have an account? <a href="#" id="show-login" style="color: #3182ce; text-decoration: none; font-weight: 600;">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
