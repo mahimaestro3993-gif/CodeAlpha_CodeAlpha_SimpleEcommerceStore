@@ -19,18 +19,3 @@ A robust, full-stack social media web application built with the MERN stack. The
 ```bash
 git clone [https://github.com/mahimaestro3993-gif/CodeAlpha_SocialMediaPlatform.git](https://github.com/mahimaestro3993-gif/CodeAlpha_SocialMediaPlatform.git)
 cd CodeAlpha_SocialMediaPlatform
-cd Backend
-npm install
-npm start
-cd ../Frontend
-npm install
-npm start
----
-
-### Step 3: Push it Live!
-Once you save the file (**Ctrl + S**), push it up to GitHub using your terminal so it renders right on your main repository landing page:
-
-```powershell
-git add README.md
-git commit -m "docs: add comprehensive project README architecture"
-git push origin main
